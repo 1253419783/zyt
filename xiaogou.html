@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0 auto;
+				padding: 0;
+			}
+			.a img{
+				width: 100%;
+				height: auto;
+			}
+			.b{
+				background-color: pink;
+				width: 20%;
+				border-radius: 20px;
+				text-align: center;
+				margin-top: 5%;
+				margin-bottom: 5%;
+			}
+			.b a{
+				text-decoration: none;
+				font-size: 30px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<img src="img/xiaogou.jpg" alt="" />
+		</div>
+		<audio id="bg-music"><source src="path_to_your_audio_file.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+		<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		    var audio = document.getElementById('bg-music');
+		    audio.play().catch(function(error) {
+		        // 自动播放失败，可能需要用户交互
+		    });
+		});
+		</script>
+		<div class="b" >
+			<a href="a.html">首页</a>
+			<audio src="js/bahuiyi.mp3" autoplay></audio>
+		</div>
+	</body>
+</html>
